@@ -1,0 +1,4 @@
+Given a product category, brand, or retailer, return a list of keywords that are relevant to that input.
+
+
+Input: [TASK]

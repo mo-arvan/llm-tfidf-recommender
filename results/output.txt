@@ -1,0 +1,172 @@
+/usr/local/bin/python3 /opt/project/src/offer_recommender.py
+Top 5 offers for Target
+Expanded keywords: Affordable fashion Home goods Electronics Toys Baby products Clothing Shoes Accessories Home decor Furniture Outdoor gear Sports equipment Pet supplies Health and beauty Personal care Household essentials
+	Arber, at Target
+	Score: 0.5517991524338901
+	Retailer: TARGET
+	Brand: ARBER
+	Categories: nan
+	Keywords:   "Arber", "Target", "outdoor furniture", "patio sets", "garden decor", "home decor", "furniture"
+
+
+	L'Oréal Paris Makeup, spend $30 at Target
+	Score: 0.42439312611504226
+	Retailer: TARGET
+	Brand: LOREAL PARIS COSMETICS
+	Categories: Makeup, Beauty
+	Keywords:   "L'Oréal Paris", "Makeup", "Beauty", "Cosmetics", "Target"
+
+
+	L'Oréal Paris Makeup, spend $35 at Target
+	Score: 0.42341620385717244
+	Retailer: TARGET
+	Brand: LOREAL PARIS COSMETICS
+	Categories: Makeup, Beauty
+	Keywords:   "L'Oréal Paris", "Makeup", "Beauty", "Cosmetics", "Target"
+
+
+	L'Oréal Paris True Match Foundation at Target
+	Score: 0.4140541807772387
+	Retailer: TARGET
+	Brand: LOREAL PARIS COSMETICS
+	Categories: Makeup, Beauty
+	Keywords:   "L'Oréal Paris", "True Match Foundation", "Target", "Makeup", "Beauty", "Foundation", "Cosmetics", "L'Oréal Cosmetics"
+
+
+	L'Oreal Paris True Match Foundation at Target
+	Score: 0.4042175400368646
+	Retailer: TARGET
+	Brand: LOREAL PARIS COSMETICS
+	Categories: Makeup, Beauty
+	Keywords:   "L'Oreal Paris", "True Match Foundation", "Target", "Makeup", "Beauty", "Foundation", "Cosmetics", "LOREAL PARIS COSMETICS"
+
+
+Using augmented keywords
+Top 5 offers for Huggies
+Expanded keywords: Diapers Baby wipes Nappies Disposable diapers Baby care Parenting Infant products Toddler products Baby hygiene Diapering essentials Changing supplies Nursery products
+	Spend $220 at Tom Thumb
+	Score: 0.2916540836341517
+	Retailer: TOM THUMB
+	Brand: TOM THUMB
+	Categories: nan
+	Keywords:   "Grocery, Supermarket, Food, Beverages, Household Essentials, Personal Care, Pet Supplies, Baby Products"
+
+
+	Fresh Bakery Products at Casey's, select varieties
+	Score: 0.13949149112003897
+	Retailer: CASEYS GENERAL STORE
+	Brand: CASEYS GENERAL STORE
+	Categories: Cooking & Baking, Pantry, Frozen Pizza & Pizza Snacks, Frozen
+	Keywords:   "Fresh bakery products", "Casey's General Store", "select varieties", "cooking & baking", "pantry", "frozen pizza & pizza snacks", "frozen"
+
+
+	Tyson Products, select varieties, spend $20 at Sam's Club
+	Score: 0.11561973965496923
+	Retailer: SAMS CLUB
+	Brand: BALL PARK FRANK
+	Categories: Packaged Meat, Pantry, Frozen Beef, Frozen Meat
+	Keywords:   "Tyson Products", "Ball Park Frank", "Sam's Club", "Packaged Meat", "Pantry", "Frozen Beef", "Frozen Meat"
+
+
+	Kradle, select products, online at Chewy.com
+	Score: 0.10845915495345303
+	Retailer: CHEWY
+	Brand: KRADLE
+	Categories: Cooking & Baking, Pantry, Dog Supplies, Animals & Pet Supplies
+	Keywords:   "Kradle, dog food, pet supplies, cooking, baking, pantry, animal supplies"
+
+
+	Burt's Bee's® Facial Wipes, select varieties, 30 count at Walmart
+	Score: 0.10788467154852258
+	Retailer: WALMART
+	Brand: BURTS BEES
+	Categories: Makeup, Beauty, Skin Care, Health & Wellness, Hair Removal, Health & Wellness
+	Keywords:   "Beeswax, Aloe Vera, Vitamin E, Chamomile, Facial Cleansing Wipes, Makeup Remover, Sensitive Skin, Natural Ingredients, Cruelty-Free, Vegan"
+
+
+Top 5 offers for Makeup
+Expanded keywords:
+	L'Oréal Paris Makeup, spend $30 at Target
+	Score: 0.46841688972319534
+	Retailer: TARGET
+	Brand: LOREAL PARIS COSMETICS
+	Categories: Makeup, Beauty
+	Keywords:   "L'Oréal Paris", "Makeup", "Beauty", "Cosmetics", "Target"
+
+
+	L'Oréal Paris Makeup, spend $35 at Target
+	Score: 0.46733862794803005
+	Retailer: TARGET
+	Brand: LOREAL PARIS COSMETICS
+	Categories: Makeup, Beauty
+	Keywords:   "L'Oréal Paris", "Makeup", "Beauty", "Cosmetics", "Target"
+
+
+	Molson Coors®, select varieties, 12 pack+
+	Score: 0.2605215731502848
+	Retailer: nan
+	Brand: COORS LIGHT
+	Categories: Beer, Alcohol, Makeup, Beauty
+	Keywords:   "Beer, Alcohol, Light Beer, Lager, Brewing, Refreshing, Crisp, Cold, Golden, Colorado, Rocky Mountains"
+
+
+	L'Oréal Paris True Match Foundation at Target
+	Score: 0.22850272495222376
+	Retailer: TARGET
+	Brand: LOREAL PARIS COSMETICS
+	Categories: Makeup, Beauty
+	Keywords:   "L'Oréal Paris", "True Match Foundation", "Target", "Makeup", "Beauty", "Foundation", "Cosmetics", "L'Oréal Cosmetics"
+
+
+	L'Oreal Paris True Match Foundation at Target
+	Score: 0.2230742102362697
+	Retailer: TARGET
+	Brand: LOREAL PARIS COSMETICS
+	Categories: Makeup, Beauty
+	Keywords:   "L'Oreal Paris", "True Match Foundation", "Target", "Makeup", "Beauty", "Foundation", "Cosmetics", "LOREAL PARIS COSMETICS"
+
+
+Top 5 offers for Pizza
+Expanded keywords: Pepperoni Margherita Hawaiian Meat lovers Four cheese Veggie lovers BBQ chicken Shrimp scampi Bacon cheeseburger Mediterranean BBQ pork Roasted vegetables Gluten-free crust Delivery Takeout Restaurant Pizzeria Italian food Cheese Sauce Toppings Crust Breadsticks Salad Wings Dips Appetizers Drinks Desserts
+	Whole pizza at Casey's
+	Score: 0.5621551577180589
+	Retailer: CASEYS GENERAL STORE
+	Brand: CASEYS GENERAL STORE
+	Categories: Cooking & Baking, Pantry, Frozen Pizza & Pizza Snacks, Frozen
+	Keywords:   "Pizza, whole pizza, Casey's, frozen pizza, pizza snacks, cooking, baking, pantry"
+
+
+	Whole Pizza at Casey's
+	Score: 0.5621551577180589
+	Retailer: CASEYS GENERAL STORE
+	Brand: CASEYS GENERAL STORE
+	Categories: Cooking & Baking, Pantry, Frozen Pizza & Pizza Snacks, Frozen
+	Keywords:   "Whole pizza, Casey's General Store, frozen pizza, pizza snacks, cooking, baking, pantry"
+
+
+	Whole Pizza at Casey's
+	Score: 0.5621551577180589
+	Retailer: CASEYS GENERAL STORE
+	Brand: CASEYS GENERAL STORE
+	Categories: Cooking & Baking, Pantry, Frozen Pizza & Pizza Snacks, Frozen
+	Keywords:   "Whole pizza, Casey's General Store, frozen pizza, pizza snacks, cooking, baking, pantry"
+
+
+	Whole Pizza Pie at Casey's
+	Score: 0.5353889255317223
+	Retailer: CASEYS GENERAL STORE
+	Brand: CASEYS GENERAL STORE
+	Categories: Cooking & Baking, Pantry, Frozen Pizza & Pizza Snacks, Frozen
+	Keywords:   "Whole pizza pie, Casey's General Store, frozen pizza, pizza snacks, cooking, baking, pantry"
+
+
+	2 Pack OR 2 Liter AND Whole Pizza at Casey's
+	Score: 0.5143104880497797
+	Retailer: CASEYS GENERAL STORE
+	Brand: CASEYS GENERAL STORE
+	Categories: Cooking & Baking, Pantry, Frozen Pizza & Pizza Snacks, Frozen
+	Keywords:   "Pizza, whole pizza, frozen pizza, pizza snacks, cooking, baking, pantry, food, grocery, convenience store"
+
+
+
+Process finished with exit code 0

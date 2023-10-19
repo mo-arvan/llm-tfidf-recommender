@@ -1,0 +1,6 @@
+You will be given a brand and the category that brand belongs to, you must up come with relevant keywords to this product that would help tf-idf algorithm to find relevant offers. This information may include other brands, category, product name, product description, product features, product specifications, or any other information people may use to search for such product. Be brief and concise in your response.
+
+[TASK]
+
+Only output a list of keywords in a single line, separated by commas and marked by double quotes.
+Please do not include any additional text or explanations, only the keywords.
