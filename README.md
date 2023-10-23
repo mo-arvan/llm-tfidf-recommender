@@ -9,6 +9,21 @@ must provide a tool that allows users to search for offers via text input from t
 
 Skip to the Offer Recommendation to see the final result if you are not interested in the details of the approach.
 
+My approach is to use a simple tf-idf model to recommend offers to the users. I augment the offers with additional data
+using an LLM, Llama 2 70b q4 in particular. The LLM is used to generate additional keywords for each offer. This is
+because the offers are very short and do not contain much information. Then, I train a tf-idf model on the original data
+and the augmented data. There is a single function that handles giving a top-5
+recommendation to the user. Note that the search query itself can be augmented as well to include additional 
+information. The usage of LLMs could be replaced by pre-defined rules or knowledge graphs. 
+This function can become and API endpoint that can be used by the front-end to recommend
+offers to the user. The performance and the results are not quantified in this work, but it can be easily done by
+having access to labeled data. I prefer to finalize the full pipeline including the evaluation prior to moving forward
+with a more complex model. Furthermore, the expectation of the model also must be defined, and we cannot use "good" as a
+descriptor for the model. Future development can utilize this code as baseline and build on top of it. The visualization
+is handled by streamlit, which is a simple and easy to use tool for building quick prototypes. The UI is not the focus
+of this work, but it can be easily improved by using a more sophisticated UI framework, but that is outside my
+expertise.
+
 ### 0. Environment Setup
 
 Build the docker image and run the container. The container will be used to run the code. The code is written in Python
@@ -17,11 +32,13 @@ Build the docker image and run the container. The container will be used to run 
 docker build -t offer-recommender -f docker/slim.dockerfile .
 ```
 
-Run it with:
+Run it inside docker container, map ports for streamlit.
 
-```bash 
-docker run -it --rm -v $(pwd):/app offer-recommender bash
+```bash
+docker run -it -p 8501:8501 --rm -v $(pwd):/app offer-recommender streamlit run src/offer_recommender.py
 ```
+
+All the scripts assume the environment is properly setup.
 
 ### 1. Offer Augmentation
 
@@ -37,6 +54,7 @@ concept.
 
 Run the below command to generate the augmented input. The augmented input will be saved in `data/offers_augmented.csv`.
 
+You must be inside the docker container to run the code.
 ```bash
 python src/llm_augmentation.py
 ```
@@ -58,7 +76,7 @@ this is a proof of concept. The code uses tfidf model trained on offers and the 
 is below a certain threshold, it will use the tfidf model trained on the augmented input.
 
 ```bash
-python src/offer_recommender.py
+python streamlit run src/offer_recommender.py
 ```
 
 ### Evaluation
@@ -67,40 +85,31 @@ The file [output.txt](results%2Foutput.txt) contains the outputs of the model. W
 that the model is working as expected. Ultimately, we need a way to evaluate this work properly to determine the best
 approach. The recommendations are also provided in [results.csv](results%2Fresults.csv).
 
-### Top 1 for Target
+### Top 5 for Target
 
 The results look good, expanded keywords looks useful, but the expanded model has not been used due to high score for
 the original model.
 
 ```text
-Top 5 offers for Target
-Expanded keywords: Affordable fashion Home goods Electronics Toys Baby products Clothing Shoes Accessories Home decor Furniture Outdoor gear Sports equipment Pet supplies Health and beauty Personal care Household essentials
-Arber, at Target
-Score: 0.5517991524338901
-Retailer: TARGET
-Brand: ARBER
-Categories: nan
-Keywords:   "Arber", "Target", "outdoor furniture", "patio sets", "garden decor", "home decor", "furniture"
-
+0.55 Arber, at Target
+0.42 L'Oréal Paris Makeup, spend $30 at Target
+0.42 L'Oréal Paris Makeup, spend $35 at Target
+0.41 L'Oréal Paris True Match Foundation at Target
+0.40 L'Oreal Paris True Match Foundation at Target
 ```
 
-### Top 1 for Huggies
+### Top 1 for Pizza
 
 This time, we are using the augmented keywords. The results are average, I looked for potential matches in the offers
 and I couldn't find any relevant offers at first glance. I suppose relevant offers targeting baby product are relevant,
 this needs to be evaluated further.
 
 ```text
-Using augmented keywords
-Top 5 offers for Huggies
-Expanded keywords: Diapers Baby wipes Nappies Disposable diapers Baby care Parenting Infant products Toddler products Baby hygiene Diapering essentials Changing supplies Nursery products
-Spend $220 at Tom Thumb
-Score: 0.2916540836341517
-Retailer: TOM THUMB
-Brand: TOM THUMB
-Categories: nan
-Keywords:   "Grocery, Supermarket, Food, Beverages, Household Essentials, Personal Care, Pet Supplies, Baby Products"
-
+0.56 Whole pizza at Casey's
+0.56 Whole Pizza at Casey's 
+0.56 Whole Pizza at Casey's
+0.54 Whole Pizza Pie at Casey's
+0.51 2 Pack OR 2 Liter AND Whole Pizza at Casey's
 ```
 
 
