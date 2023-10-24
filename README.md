@@ -5,6 +5,13 @@
 Given a list of offers and some associated metadata around the retailers and brands that are sponsoring the offer, we
 must provide a tool that allows users to search for offers via text input from the user.
 
+## Demo. 
+
+Open the jupyter notebook on colab and follow the instructions. 
+<a target="_blank" href="https://colab.research.google.com/github/mo-arvan/recommender-system/blob/main/demo/Recommender_Demo.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
 ## Approach
 
 Skip to the Offer Recommendation to see the final result if you are not interested in the details of the approach.
