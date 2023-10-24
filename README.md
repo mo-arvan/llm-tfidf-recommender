@@ -13,7 +13,12 @@ My approach is to use a simple tf-idf model to recommend offers to the users. I 
 using an LLM, Llama 2 70b q4 in particular. The LLM is used to generate additional keywords for each offer. This is
 because the offers are very short and do not contain much information. Then, I train a tf-idf model on the original data
 and the augmented data. There is a single function that handles giving a top-5
-recommendation to the user. Note that the search query itself can be augmented as well to include additional 
+recommendation to the user. Tf-idf is a simple model that can be easily trained and deployed. Other word embeddings 
+such as GloVe or BERT models can replace the existing model with minimal changes to the code.
+
+**Ultimately, our approach is to encode the search, and finding the most similar offers in the vector space.**
+
+Note that the search query itself can be augmented as well to include additional 
 information. The usage of LLMs could be replaced by pre-defined rules or knowledge graphs. 
 This function can become and API endpoint that can be used by the front-end to recommend
 offers to the user. The performance and the results are not quantified in this work, but it can be easily done by
